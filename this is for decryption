@@ -1,0 +1,4 @@
+# this is Decryption  only
+openssl enc -aes-256-cbc -d -in data.enc -out decrypted.txt -k secretpassword
+openssl dgst -sha256 -verify id_rsa.pub -signature signature.txt data.enc
+
